@@ -4,16 +4,18 @@
   "description": "module 1",
   "main": "index.js",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "workspaces": [
-    "./packages/*"
-  ],
   "dependencies": {
-    "@module-1/package1": "^1.0.0"
+    "@module-1/package1": "^1.0.0",
+    "@module-1/package2": "^1.0.0",
+    "@module-1/package3": "^1.0.0"
   }
 }
